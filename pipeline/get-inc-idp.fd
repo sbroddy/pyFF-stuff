@@ -1,0 +1,5 @@
+- load:
+     - http://md.incommon.org/InCommon/InCommon-metadata-idp-only.xml
+- select: "!//md:EntityDescriptor[md:Extensions[mdrpi:RegistrationInfo[@registrationAuthority='https://incommon.org']]]"
+- publish: "/data/inc-idp-only.xml"
+- stats
